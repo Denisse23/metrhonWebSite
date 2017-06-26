@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/headerboard.css">
+		<link rel="stylesheet" type="text/css" href="css/util.css">
+		<link rel="stylesheet" type="text/css" href="css/inicio.css">
+		<script type="text/javascript" src="js/headerboard.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+	</head>
+
+	
+	<body onLoad="onLoad(); adjustContent(true)" onresize="onBodyResize(); adjustContent(false)">
+			<div id="headerboard" style="display: none">
+				<div id="companyHeader">
+					<img id="logo" src="images/logo1.png"/>
+					<div id="companyText">
+						<h1>Metrológica de Honduras, S. de R. L.</h1>
+						<h5>Metrología - Capacitaciones - Sistemas de Gestión de la Calidad</h5>
+					</div>
+				</div>
+				<div id="horizontalNavigationBar" style="display: none">
+					<ul id="horizontalUl">
+						<li><a href="inicio.html">Inicio</a></li>
+						<li><a href="#">Capacitaciones</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li><a href="asesorias.html">Asesorías</a></li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+					</ul>
+				</div>
+				<div id="verticalMenu" style="display: none">
+					<div id="menuIcon" onclick="showMenu()">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					
+				</div>
+				<h3 id="companyNameSpan">Metrológica de Honduras, S. de R. L.</h3>
+			</div>
+			<div id="menu" style="display: none">
+				<div class="boxclose" onclick="hideMenu()"></div>
+				<table id="menuTable">
+					<tr class="headerTableRow">
+						<th>MENÚ</th>
+					</tr>
+						<tr class="border_bottom">
+							<td><a href="inicio.html">Inicio</a></td>
+						</tr>
+						<tr class="border_bottom">
+							<td><a href="#">Capacitaciones</a></td>
+						</tr>
+						<tr class="border_bottom">
+							<td><a href="#">Equipos</a></td>
+						</tr class="border_bottom">
+						<tr class="border_bottom">
+							<td><a href="asesorias.html">Asesorías</a></td>
+						</tr class="border_bottom">
+						<tr class="border_bottom">
+							<td><a href="contactenos.html">Contáctenos</a></td>
+						</tr>
+				</table>
+			</div>
+			<div id ="content">
+				<img id="equipo" src="images/equipo01.png" />
+				<div id="paragraphContainer">
+					<h2 id="paragraphTitle">Metrología y Calidad</h2>
+					<hr/>
+					<p id="paragraph">Nos complace saber que en su proceso las mediciones que realiza son de mucha importancia, considerando  
+					   en cada momento la temperatura de su generador por combustión, el balance de carga en su industria o cuando 
+					   verifica la cantidad de componentes en la producción de medicamentos. 
+					   <br><br>
+					   ¿Quiere saber de forma objetiva si la báscula con la que realiza compras es confiable? 
+					   <br><br>
+					   Metrológica de Honduras está conformado con los mejores especialistas en 
+					   calibración, lo que le permitirá mantener bajo control su equipo de medición, brindándole las mejores prácticas para
+					   implementar un sistema de calidad que cumpla con los requisitos metrológicos según las exigencias de la norma ISO/IEC 17025: 
+					   Requisitos Generales para la competencia técnica de laboratorios de ensayo y calibración.
+					</p>
+				</div>
+				<div id="pollContainer">
+					<div id="pollText">
+						<h2 id="pollTitle">Encuesta</h2>
+						<hr/>
+						<p id="pollParagraph">
+						   Queremos saber lo que necesita su empresa.
+						   <br><br>
+						   Ingrese a cualquiera de los vínculos que se encuentran en esta sección y así ofrecerle un mejor servicio:
+						</p>
+						
+					</div>
+					<div id="pollLinksImage">
+						<img id="pollImage" src="images/encuesta.png"/>
+						<div id="pollLinks">
+							<a href="https://es.surveymonkey.com/r/Y3J3V5K">Diagnóstico sobre su empresa</a>
+							<br><br>
+							<a href="https://es.surveymonkey.com/r/2HTNKF5">Diagnóstico sobre sus equipos</a>
+						</div>
+					</div>
+				</div>
+				<div id="footer">©2017 Metrológica de Honduras, S. de R.L.</div>
+			</div>
+
+	</body>
+
+</html>
+		

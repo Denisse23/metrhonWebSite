@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/headerboard.css">
+		<link rel="stylesheet" type="text/css" href="css/util.css">
+		<link rel="stylesheet" type="text/css" href="css/asesorias.css">
+		<script type="text/javascript" src="js/headerboard.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+	</head>
+
+	
+	<body onLoad="onLoad(); adjustAsesoriasContent(true)" onresize="onBodyResize(); adjustAsesoriasContent(false)">
+			<div id="headerboard" style="display: none">
+				<div id="companyHeader">
+					<img id="logo" src="images/logo1.png"/>
+					<div id="companyText">
+						<h1>Metrológica de Honduras, S. de R. L.</h1>
+						<h5>Metrología - Capacitaciones - Sistemas de Gestión de la Calidad</h5>
+					</div>
+				</div>
+				<div id="horizontalNavigationBar" style="display: none">
+					<ul id="horizontalUl">
+						<li><a href="inicio.html">Inicio</a></li>
+						<li><a href="#">Capacitaciones</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li><a href="asesorias.html">Asesorías</a></li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+					</ul>
+				</div>
+				<div id="verticalMenu" style="display: none">
+					<div id="menuIcon" onclick="showMenu()">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					
+				</div>
+				<h3 id="companyNameSpan">Metrológica de Honduras, S. de R. L.</h3>
+			</div>
+			<div id="menu" style="display: none">
+				<div class="boxclose" onclick="hideMenu()"></div>
+				<table id="menuTable">
+					<tr class="headerTableRow">
+						<th>MENÚ</th>
+					</tr>
+						<tr class="border_bottom">
+							<td><a href="inicio.html">Inicio</a></td>
+						</tr>
+						<tr class="border_bottom">
+							<td><a href="#">Capacitaciones</a></td>
+						</tr>
+						<tr class="border_bottom">
+							<td><a href="#">Equipos</a></td>
+						</tr class="border_bottom">
+						<tr class="border_bottom">
+							<td><a href="asesorias.html">Asesorías</a></td>
+						</tr class="border_bottom">
+						<tr class="border_bottom">
+							<td><a href="contactenos.html">Contáctenos</a></td>
+						</tr>
+				</table>
+			</div>
+			<div id ="content">
+				<div id="paragraphContainer">
+					<h2 id="paragraphTitle">Le habilitamos su equipo de medición y sistema de calidad</h2>
+					<div id="paragraphs">
+						<p id="paragraph1">
+							Estamos para ofrecerle seguridad y confianza en la trazabilidad de las medidas cuando realizamos  la 
+							correcta calibración,  evitando que el resultado de los  ensayos y las medidas bajen la calidad de los equipos en su empresa. 
+						</p>
+						<br/>
+						<h3 id="paragraphTitle2">Equipamiento</h3>
+						<br/>
+						<img id="equipo2" src="images/equipo02.jpg" />
+						<br/>
+						<ul id="paragraph2">
+							<li>Proyectos de equipamiento bajo el concepto "llave en mano" - listo para ser puesto en marcha!.</li>
+							<li>Elaboración de instructivos, procedimientos técnicos, cuidados generales y condiciones especiales de operación a la medida.</li>
+							<li>Todo lo anterior aplicable en medidores volumétricos, de presión, energía, temperatura.</li>
+						</ul>
+						<br/>
+						<h3 id="paragraphTitle3">Sistemas de Calidad</h3>
+						<br/>
+						<ul  id="paragraph3">
+							<li>Desarrollo de sistemas de la calidad para sus procesos.</li>
+							<li>Gestión mediante uso de base de datos electrónica.</li>
+							<li>Elaboración de documentos y registros.</li>
+						</ul>
+						<br/>
+						<h3 id="paragraphTitle4">¿Por qué calibrar los equipos?</h3>
+						<br/>
+						<ul  id="paragraph4">
+							<li>Le ahorrará  tiempo y costos en sus procesos.</li>
+							<li>Dará confianza a sus clientes en la calidad de los productos y servicios.</li>
+							<li>Asegura que los equipos se encuentren en óptimas condiciones.</li>
+						</ul>
+					</div>
+				</div>
+				<div id="pollContainer">
+					<div id="pollText">
+						<h2 id="pollTitle">Encuesta</h2>
+						<hr/>
+						<p id="pollParagraph">
+						   Queremos saber lo que necesita su empresa.
+						   <br><br>
+						   Ingrese a cualquiera de los vínculos que se encuentran en esta sección y así ofrecerle un mejor servicio:
+						</p>
+						
+					</div>
+					<div id="pollLinksImage">
+						<img id="pollImage" src="images/encuesta.png"/>
+						<div id="pollLinks">
+							<a href="https://es.surveymonkey.com/r/Y3J3V5K">Diagnóstico sobre su empresa</a>
+							<br><br>
+							<a href="https://es.surveymonkey.com/r/2HTNKF5">Diagnóstico sobre sus equipos</a>
+						</div>
+					</div>
+				</div>
+				<div id="footer">©2017 Metrológica de Honduras, S. de R.L.</div>
+			</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,23 @@
+
+#paragraphContainer {
+	background-color:#c5d7e4;
+}
+
+#paragraphContainer h2 {
+	color:#2c353d;
+	width:95%;
+	margin-left:2%;
+}
+
+#paragraphContainer hr { 
+	width:60%;
+	margin-left:19%;
+	border-color: #c0c0c0; 
+} 
+
+#paragraphContainer p {
+	color:#2c353d;
+	width:60%;
+	text-align: center;
+	margin-left:19%;
+}

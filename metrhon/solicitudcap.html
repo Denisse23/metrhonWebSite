@@ -1,0 +1,397 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>METRHON - Solicitud de Capacitación</title>
+<link rel="shortcut icon" href="images/icon1.png" />
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="metrhon.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	background-image: url(images/laboratorio01.png);
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<!-- 
+Para obtener más información sobre los comentarios condicionales situados alrededor de las etiquetas html en la parte superior del archivo:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+  
+Haga lo siguiente si usa su compilación personalizada de modernizr (http://www.modernizr.com/):
+* inserte el vínculo del código js aquí
+* elimine el vínculo situado debajo para html5shiv
+* añada la clase "no-js" a las etiquetas html en la parte superior
+* también puede eliminar el vínculo con respond.min.js si ha incluido MQ Polyfill en su compilación de modernizr 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+    <table width="861" border="0" align="center">
+      <tr>
+        <th scope="col">&nbsp;</th>
+      </tr>
+    </table>
+    <table width="861" border="0" align="center">
+      <tr>
+        <th width="301" height="130" rowspan="2" bgcolor="#FFFFFF" scope="col"><p><a href="logo.html"><img src="images/logo1.png" alt="METRHON" width="234" height="129" longdesc="images/logo1.png"></a></p></th>
+        <th width="550" height="76" align="left" valign="middle" bgcolor="#FFFFFF" scope="col"><strong style="font-size: 30px; color: #000; font-family: sans-serif;">Metrológica de Honduras, S. de R. L.</strong></th>
+      </tr>
+      <tr>
+        <th height="60" valign="top" bgcolor="#FFFFFF" scope="col"><ul id="menu01" class="MenuBarHorizontal">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="capacitaciones.html">Capacitaciones</a></li>
+          <li><a href="asesorias.html">Asesorías</a></li>
+          <li><a href="equipos.html">Equipos</a></li>  
+          <li><a href="contacto.html">Cont&aacute;ctenos</a></li>
+        </ul></th>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+        <th height="43" colspan="2" align="center" valign="top" bgcolor="#FFFFFF" scope="col"><table width="800" border="0">
+          <tr>
+            <th width="446" bgcolor="#50617F" style="color: #FFF; font-size: 24px;" scope="col">Solicitud de Capacitación</th>
+          </tr>
+        </table></th>
+      </tr>
+    </table>
+    <table width="860" border="0" align="center">
+      <tr align="center">
+        <th valign="top" bgcolor="#FFFFFF" scope="col"><table width="750" border="0" align="center">
+            <tr>
+              <td align="left" style="background-color: #FFF;" scope="col"><form action="capacitac.php" method="post" name="solcapacit" id="solcapacit">
+                Favor sírvase de llenar el siguiente formulario para solicitar la capacitación de su interés. En caso que requiera ayuda o resolver cualquier duda, escríbanos a <span style="font-style: italic; text-align: justify;">consultas@metrhon.com</span>
+                <p style="color: #000; text-align: center; font-size: 18px;">Información de la empresa</p>
+                <p style="color: #000; text-align: left;">
+                  <label for="Empresa">1. Nombre de la empresa:</label>
+                  <input name="Empresa" type="text" id="Empresa" size="30" maxlength="30">
+                  <span style="color: #FFF">__</span>2.
+                  <label for="telefonoempr">No. de tel.*: (+504)</label>
+                <input name="telefonoempr" type="text" id="telefonoempr" size="8" maxlength="8">
+                
+                <p style="color: #000; text-align: left;">3.  
+                  <label for="direccion">Dirección de la empresa:</label>
+                  <input name="direccion" type="text" id="direccion" size="70" maxlength="60">
+              </p>
+                <p style="color: #000; text-align: center; font-size: 18px;">Información del contacto de la empresa</p>
+                <p style="color: #000; text-align: left;">
+                  <label for="Contactonom">4. Nombre completo:</label>
+                  <input name="Contactonom" type="text" id="Contactonom" size="30" maxlength="30">
+                  <span style="color: #FFF">__</span><span style="color: #000; text-align: left;">
+                  <label for="Contactotel">5. No. de tel.*: (+504)</label>
+                  <input name="Contactotel" type="text" id="Contactotel" size="8" maxlength="8">
+                  </span>                  <span class="textfieldRequiredMsg">Se necesita un valor.</span><span style="color: #000; text-align: left;">
+                <label for="Contactoema"><br>
+                  <br>
+                  6. Correo electrónico:</label>
+                <input name="Contactoema" type="text" id="Contactoema" size="25" maxlength="25">
+                  </span></p>
+                <p style="font-style: italic">*Si su número posee código regional distinto a +504, favor indíquelo en las observaciones.</p>
+                <p style="font-size: 18px; text-align: center;">Información general sobre la capacitación</p>
+                <p>7. 
+                  <label for="Noparticipantes">Número de participantes:</label>
+                  <input name="Noparticipantes" type="text" id="Noparticipantes" size="2" maxlength="2">
+                personas</p>
+                <p>8. Temario solicitado:</p>
+<table width="600" height="402" border="0" align="center">
+  <tr>
+    <th align="left" scope="col"><label><span style="text-align: left">
+      <input type="checkbox" name="T01" value="si" id="Tema_0">
+      8.1. Metrología básica</span></label>        
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T01" value="si" id="Tema_1">
+      8.2. Herramientas estadísticas en el aseguramiento metrológico</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T03" value="si" id="T03">
+      8.3. Estimación de la incertidumbre (generalidades)</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T04" value="si" id="T04">
+      8.4. Estimación de la incertidumbre (un procedimiento)</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T05" value="si" id="T05">
+      8.5. Interpretación y uso de los certificados de calibración</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T06" value="si" id="T06">
+      8.6. Aseguramiento Metrológico</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T07" value="si" id="T07">
+      8.7. Herramientas para sistemas de Gestión ISO 17025</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T08" value="si" id="T08">
+      8.8. Principios de calibración: balanzas y básculas</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T09" value="si" id="T09">
+      8.9. Principios de calibración: instrumentos volumétricos</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T10" value="si" id="T10">
+      8.10.Principios de calibración: RTD y termopares</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T11" value="si" id="T11">
+      8.11. Principios de calibración: termómetros</label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T12" value="si" id="T12">
+      8.12. Principios de calibración: pesas patrón </label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T13" value="si" id="T13">
+      8.13. Principios metrológicos aplicados a transductores </label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T14" value="si" id="T14">
+      8.14. Validación de Procedimientos de calibración </label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T15" value="si" id="T15">
+      8.15. Validación de Procedimientos de ensayos<br>
+    </label>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T16" value="si" id="T16">
+      8.16. Aseguramiento de la calidad en SSF </label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T17" value="si" id="T17">
+      8.17. Cursos con expertos internacionales </label>
+      <br>
+  </tr>
+  <tr>
+    <th align="left" scope="col"><label>
+      <input type="checkbox" name="T18" value="si" id="T18">
+      8.18. Otros (importante especificar abajo) </label>    
+  </tr>
+              </table>
+<p>9.
+  <label for="temadetallle"> Indique qué otro tema o enfoque especial espera de la capacitación</label>:
+  <textarea name="temadetallle" cols="80" rows="3" id="temadetallle"></textarea>
+  <span style="text-align: center"></span></p>
+                <p>10. <strong>¿</strong>En qué formatos desea que se le proporcione el material de estudio de la capacitación?</p>
+                <table width="300" border="0" align="left">
+                  <tr>
+                    <th width="421" height="24" align="left" scope="col"><p>
+                      <label>
+                        <input type="checkbox" name="MIMPR" value="si" id="Material_0">
+                        Formato impreso</label>
+                      <span style="color: #FFF">___</span>
+<label>
+  <input type="checkbox" name="MDIGI" value="si" id="Material_1">
+  Formato digital</label>
+                      <br>
+                    </p></th>
+                  </tr>
+                </table>
+                <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>11. <strong>¿</strong>Qué comprobantes de la capacitación desea incluir?                </p>
+                <table width="500" border="0">
+                  <tr>
+                    <th align="left" scope="col"><p>
+                      <label>
+                        <input type="checkbox" name="CERPAR" value="si" id="CheckboxGroup1_0">
+                        Certificado de participación</label>
+                      <br>
+                      <label>
+                        <input type="checkbox" name="CERAPR" value="si" id="CheckboxGroup1_1">
+                        Certificado de aprobación (debe realizar evaluación final)</label>
+                      <br>
+                    </p></th>
+                  </tr>
+  </table>
+                <p>9. Lugar en que desea recibir la capacitación (sujeto a disponibilidad y logística):</p>
+                <p>
+                  <label>
+                    <input type="radio" name="LUGAR" value="teg" id="RadioGroup1_0">
+                    Tegucigalpa (Honduras)<span style="color: #FFF"></span></label>
+                  <span style="color: #FFF">
+                  _____
+                  </span>
+                  <label>
+                    <input type="radio" name="LUGAR" value="sps" id="RadioGroup1_1">
+                    San Pedro Sula (Honduras)</label>
+                  <span style="color: #FFF">_______</span>
+<label>
+  <input type="radio" name="LUGAR" value="otr" id="RadioGroup1_2">
+  Otro (por favor detalle)</label>
+                  </p>
+                <p>
+                  <label for="detlugar"></label>
+                  <textarea name="detlugar" cols="80" rows="2" id="detlugar"></textarea>
+                </p>
+                <p>10. Los siguientes son componentes mínimos para tener una experiencia satisfactoria en la capacitación. Por favor indique aquellos que espera sean cubiertos por nosotros, por su empresa o cuáles desea excluir de la capacitación.                </p>
+                <table width="600" border="0" align="center">
+                  <tr>
+                    <th width="195" style="text-align: left" scope="col">Salón de capacitación</th>
+                    <th width="276" style="text-align: left" scope="col"><p>
+                      <label>
+                        <input type="radio" name="salon" value="01" id="salon_0">
+                        METRHON</label>
+                      <span style="color: #FFF">___</span>
+<label>
+  <input type="radio" name="salon" value="02" id="salon_1">
+  Su empresa</label>
+                      <br>
+                    </p></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left" scope="col">Pizarra</th>
+                    <th style="text-align: left" scope="col"><p>
+                      <label>
+                        <input type="radio" name="pizarra" value="01" id="pizarra_0">
+                        METRHON</label>
+                      <span style="color: #FFF">___</span>
+<label>
+  <input type="radio" name="pizarra" value="02" id="pizarra_1">
+  Su empresa</label>
+                      <br>
+                    </p></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left" scope="col">Data show</th>
+                    <th style="text-align: left" scope="col"><p>
+                      <label>
+                        <input type="radio" name="datashow" value="01" id="datashow_0">
+                        METRHON<span style="color: #FFF"> ___</span></label>
+                      <label>
+                        <input type="radio" name="datashow" value="02" id="datashow_1">
+                        Su empresa</label>
+                      <br>
+                    </p></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left" scope="col">Refrigerio matutino</th>
+                    <th style="text-align: left" scope="col"><p>
+                      <label>
+                        <input type="radio" name="refrigmat" value="01" id="refrigmat_0">
+                        METRHON</label>
+                      <span style="color: #FFF">___ </span>
+                      <label>
+  <input type="radio" name="refrigmat" value="01" id="refrigmat_1">
+  Su empresa</label>
+                      <span style="color: #FFF">___</span>
+<label>
+  <input type="radio" name="refrigmat" value="03" id="refrigmat_2">
+  Excluir</label>
+                      <br>
+                    </p></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left" scope="col">Almuerzo</th>
+                    <th style="text-align: left" scope="col"><p>
+                      <label>
+                        <input type="radio" name="almuerzo" value="01" id="almuerzo_0">
+                        METRHON<span style="color: #FFF"> ___</span></label>
+                      <label>
+                        <input type="radio" name="almuerzo" value="02" id="almuerzo_1">
+                        Su empresa</label>
+                      <span style="color: #FFF">___</span>
+<label>
+  <input type="radio" name="almuerzo" value="03" id="almuerzo_2">
+  Excluir</label>
+                      <br>
+                    </p></th>
+                  </tr>
+                  <tr>
+                    <th style="text-align: left" scope="col">Refrigerio vespertino</th>
+                    <th style="text-align: left" scope="col"><p>
+                      <label>
+                        <input type="radio" name="refrivesp" value="01" id="refrivesp_0">
+                        METRHON<span style="color: #FFF"> ___</span></label>
+                      <label>
+                        <input type="radio" name="refrivesp" value="02" id="refrivesp_1">
+                        Su empresa</label>
+                      <span style="color: #FFF">___</span>
+<label>
+  <input type="radio" name="refrivesp" value="03" id="refrivesp_2">
+  Excluir</label>
+                      <br>
+                    </p></th>
+                  </tr>
+              </table>
+                <p>Observaciones:</p>
+                <p>
+                  <label for="observaciones"></label>
+                  <span style="text-align: center"></span>
+                  <textarea name="observaciones" cols="80" rows="4" id="observaciones"></textarea>
+                  <span style="text-align: center"></span>                  <span style="text-align: center"></span></p>
+                <p style="text-align: center">
+                  <input type="submit" value="Enviar">
+                  <span style="color: #FFF">_______</span>
+                  <input type="reset" name="Restablecer" id="Restablecer" value="Restablecer">
+                </p>
+                <p>1. Una vez completado el formulario, haga click en &quot;Enviar&quot; y espere a que se muestre la ventana de confirmación.</p>
+                <p><span style="text-align: left">2. También puede imprimir o guardar en formato PDF el formulario, llenarlo y enviarlo a<span style="font-style: italic"> consulta</span></span><span style="font-style: italic">s@metrhon.com</span>.</p>
+                <p> 3. Si desea dejar en blanco de nuevo el formulario, haga click en &quot;Restablecer&quot;.</p>
+                <p style="text-align: center; font-size: 16px; font-style: italic;">¡Gracias por su preferencia!              </p>
+              </form></td>
+            </tr>
+            <tr>
+              <th align="left" style="background-color: #FFF;" scope="col">&nbsp;</th>
+            </tr>
+          </table>
+          <table width="860" border="0">
+            <tr>
+              <th height="27" align="center" valign="middle" bgcolor="#FFFFFF" scope="col">©2016 Metrológica de Honduras, S. de R.L.                </th>
+            </tr>
+        </table></th>
+      </tr>
+    </table>
+  </div>
+  <p>&nbsp;</p>
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("menu01", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>
+</body>
+</html>
