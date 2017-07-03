@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/headerboard.css">
+		<link rel="stylesheet" type="text/css" href="css/util.css">
+		<link rel="stylesheet" type="text/css" href="css/inicio.css">
+		<script src="js/jssor.slider-25.0.7.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/headerboard.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+
+	</head>	
+	<body onLoad="onLoad(); adjustContent(true)" onresize="onBodyResize(); adjustContent(false)">
+		<div class="main-wrapper">
+			<div class="header" id="header-board">
+				<div class="company-info" id="company-header">
+					<div class="logo">
+						<img id="logo" src="images/logo2.png"/>
+					</div>
+					<div class="title" id="company-text">
+						<h1>Metrológica de Honduras, S. de R. L.</h1>
+						<h5>Metrología - Capacitaciones - Sistemas de Gestión de la Calidad</h5>
+					</div>
+				</div>				
+				<div id="horizontal-menu" class="horizontal-menu">
+					<ul>
+						<li><a href="inicio.html">Inicio</a></li>
+						<li><a href="#">Capacitaciones</a></li>
+						<li><a href="#">Equipos</a></li>
+						<li><a href="asesorias.html">Asesorías</a></li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+					</ul>
+				</div>
+				<div id="vertical-menu" class="vertical-menu" style="display: none">
+					<div id="menuIcon" onclick="showMenu()">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+				</div>
+			</div>
+			<div id="menu" style="display: none">
+				<div class="boxclose" onclick="hideMenu()"></div>
+				<table id="menuTable">
+					<tr class="headerTableRow">
+						<th>MENÚ</th>
+					</tr>
+						<tr class="border_bottom">
+							<td><a href="inicio.html">Inicio</a></td>
+						</tr>
+						<tr class="border_bottom">
+							<td><a href="#">Capacitaciones</a></td>
+						</tr>
+						<tr class="border_bottom">
+							<td><a href="#">Equipos</a></td>
+						</tr class="border_bottom">
+						<tr class="border_bottom">
+							<td><a href="asesorias.html">Asesorías</a></td>
+						</tr class="border_bottom">
+						<tr class="border_bottom">
+							<td><a href="contactenos.html">Contáctenos</a></td>
+						</tr>
+				</table>
+			</div>
+			<div id="content" class="content">
+				<!-- <img id="equipo" src="images/equipo01.png" /> -->
+				<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        			<!-- Loading Screen -->
+			        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
+			            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/double-tail-spin.svg" />
+			        </div>
+			        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+			            <div>
+			                <img data-u="image" src="images/equipo01.png" />
+			            </div>
+			            <div>
+			                <img data-u="image" src="images/equipo01.png" />
+			            </div>
+			            <a data-u="any" href="https://www.jssor.com" style="display:none">html carousel</a>
+			        </div>
+			        <!-- Bullet Navigator -->
+			        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+			            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+			                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+			                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+			                </svg>
+			            </div>
+			        </div>
+			        <!-- Arrow Navigator -->
+			        <div data-u="arrowleft" class="jssora053" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+			            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+			                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+			            </svg>
+			        </div>
+			        <div data-u="arrowright" class="jssora053" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+			            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+			                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+			            </svg>
+			        </div>
+			    </div>
+				<div id="paragraphContainer">
+					<h2 id="paragraphTitle">Metrología y Calidad</h2>
+					<hr/>
+					<p id="paragraph">Nos complace saber que en su proceso las mediciones que realiza son de mucha importancia, considerando  
+					   en cada momento la temperatura de su generador por combustión, el balance de carga en su industria o cuando 
+					   verifica la cantidad de componentes en la producción de medicamentos. 
+					   <br><br>
+					   ¿Quiere saber de forma objetiva si la báscula con la que realiza compras es confiable? 
+					   <br><br>
+					   Metrológica de Honduras está conformado con los mejores especialistas en 
+					   calibración, lo que le permitirá mantener bajo control su equipo de medición, brindándole las mejores prácticas para
+					   implementar un sistema de calidad que cumpla con los requisitos metrológicos según las exigencias de la norma ISO/IEC 17025: 
+					   Requisitos Generales para la competencia técnica de laboratorios de ensayo y calibración.
+					</p>
+				</div>
+				<div id="pollContainer">
+					<div id="pollText">
+						<h2 id="pollTitle">Encuesta</h2>
+						<hr/>
+						<p id="pollParagraph">
+						   Queremos saber lo que necesita su empresa.
+						   <br><br>
+						   Ingrese a cualquiera de los vínculos que se encuentran en esta sección y así ofrecerle un mejor servicio:
+						</p>
+						
+					</div>
+					<div id="pollLinksImage">
+						<img id="pollImage" src="images/encuesta.png"/>
+						<div id="pollLinks">
+							<a href="https://es.surveymonkey.com/r/Y3J3V5K">Diagnóstico sobre su empresa</a>
+							<br><br>
+							<a href="https://es.surveymonkey.com/r/2HTNKF5">Diagnóstico sobre sus equipos</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="column-3"></div>
+				<div class="column-3">E-mail: consultas@metrhon.com</div>
+				<div class="column-3">©2017 Metrológica de Honduras, S. de R.L.</div>
+			</footer>
+		</div>
+	</body>
+</html>
+		
