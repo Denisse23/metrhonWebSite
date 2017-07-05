@@ -108,7 +108,7 @@ function adjustPollContent () {
 	var pollLinksImage = document.getElementById('pollLinksImage');
 	var pollLinks = document.getElementById('pollLinks');
 	var pollImage = document.getElementById('pollImage');
-	pollText.style.height = (pollTitle.clientHeight + pollParagraph.clientHeight + 55) + "px";
-	pollLinksImage.style.height = (pollLinks.clientHeight + pollImage.clientHeight + 10) + "px";
-	pollContainer.style.height = (pollText.clientHeight +  pollLinksImage.clientHeight) + "px";
+	// pollText.style.height = (pollTitle.clientHeight + pollParagraph.clientHeight + 55) + "px";
+	// pollLinksImage.style.height = (pollLinks.clientHeight + pollImage.clientHeight + 10) + "px";
+	// pollContainer.style.height = (pollText.clientHeight +  pollLinksImage.clientHeight) + "px";
 }

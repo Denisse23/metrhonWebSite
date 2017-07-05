@@ -252,17 +252,31 @@ footer{
 	height: 60px;
 	background: #2c353d;
     color: #ababab;
+    font-size: 11px;
+    font-family: sans-serif;
+    background-image:url(../images/footer.png);
 }
 .column-3{
 	width: 33%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    margin-top: 15px;
-    font-size: 11px;
-    font-family: sans-serif;
+    margin-top: 15px;    
 }
-
+.column-2-1{
+	width: 70%;
+	display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 15px;    
+}
+.column-2-2{
+	width: 29%;
+	display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 15px;
+}
 .jssorl-004-double-tail-spin img {
     animation-name: jssorl-004-double-tail-spin;
     animation-duration: 1.2s;
