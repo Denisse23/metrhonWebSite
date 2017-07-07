@@ -249,19 +249,32 @@ tr.border_bottom td {
  }
 
 footer{
-	height: 60px;
 	background: #2c353d;
     color: #ababab;
     font-size: 11px;
     font-family: sans-serif;
     background-image:url(../images/footer.png);
 }
+.column-content{
+	margin:1%;
+}
 .column-3{
-	width: 33%;
+	width: 30%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    margin-top: 15px;    
+    margin: 15px;  
+}
+.column-3 ul{
+	font-family: sans-serif !important;
+    margin: 0 !important; 
+    color: #1a1a1a !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    font-size: 140% !important;
+    margin-left: 0 !important; 
+    line-height: 150% !important;
+    margin-bottom: 40px !important;
 }
 .column-2-1{
 	width: 70%;

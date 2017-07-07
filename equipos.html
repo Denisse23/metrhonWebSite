@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="js/util.js"></script>
 
 	</head>	
-	<body onLoad="onLoad(); adjustContent(true)" onresize="onBodyResize(); adjustContent(false)">
+	<body onLoad="onLoad(); adjustContent(true); renderTable()" onresize="onBodyResize(); adjustContent(false)">
 		<div class="main-wrapper">
 			<div class="header" id="header-board">
 				<div class="company-info" id="company-header">
@@ -101,8 +101,23 @@
 			            </svg>
 			        </div>
 			    </div>
-
+			    <div class="information">
+			    	<h2 id="paragraphTitle">Catálogos y Solicitudes</h2>
+			    	<hr/>
+			   		<p id="paragraph">¿Comienzas a equipar tu laboratorio o buscas lo último en ensayos y calidad? A continuación te mostramos algunos de los equipos que nuestros reconocidos proveedores ofrecen:</p>
+			   		<p class="tool-type">Force-Construction Lab-line:<a onclick="filterByType('fc')"><img src="images/f_c.png"></a></p>
+			   		<p class="tool-type">Science-Health Lab-Line:<a onclick="filterByType('sh')"><img src="images/s_h.png"></a></p>
+			   		<div id="table-container"></div>
+			   		<div id="paginator"></div>
+			   		<p class="low-paragraph centered">¿Lo que buscas no aparece o deseas hacer ya tu cotización? Pregunta por otros equipos y haz tus solicitudes escribiendo a nuestro correo: consultas@metrhon.com</p>
+			   		<p class="low-paragraph centered"><strong>¡CONTÁCTENOS!</strong></p>
+			    </div>
 			</div>
+			<footer class="footer">
+				<div class="column-3"></div>
+				<div class="column-3">E-mail: consultas@metrhon.com</div>
+				<div class="column-3">©2017 Metrológica de Honduras, S. de R.L.</div>
+			</footer>
 		</div>
 	</body>
 </html>
