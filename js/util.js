@@ -49,42 +49,7 @@ function isMobileDevice () {
 	return false;
 }
 
-function adjustAsesoriasContent(fromLoad) {
-	var paragraphContainer = document.getElementById('paragraphContainer');
-	var paragraphTitle = document.getElementById('paragraphTitle');
-	var paragraphs = document.getElementById('paragraphs');
-	var paragraph1 = document.getElementById('paragraph1');
-	var paragraphTitle2 = document.getElementById('paragraphTitle2');
-	var paragraph2 = document.getElementById('paragraph2');
-	var paragraphTitle3 = document.getElementById('paragraphTitle3');
-	var paragraph3 = document.getElementById('paragraph3');
-	var paragraphTitle4 = document.getElementById('paragraphTitle4');
-	var paragraph4 = document.getElementById('paragraph4');
-	var equipo2 = document.getElementById('equipo2');
-	paragraphs.style.height = (paragraph1.clientHeight + equipo2.clientHeight +
-										paragraphTitle2.clientHeight + paragraph2.clientHeight + 
-										paragraphTitle3.clientHeight + paragraph3.clientHeight +
-										paragraphTitle4.clientHeight + paragraph4.clientHeight) + "px";
-	if (document.body.offsetWidth < 800 || isMobileDevice()) {
-		if (fromLoad) {
-			// paragraphContainer.style.height = (paragraphTitle.clientHeight + paragraphs.clientHeight + 290) + "px";
-		} else {
-			// paragraphContainer.style.height = (paragraphTitle.clientHeight + paragraphs.clientHeight + 235) + "px";
-		}
-		// paragraphs.style.marginTop = "140px";
-	} else {
-		// paragraphContainer.style.height = (paragraphTitle.clientHeight + paragraphs.clientHeight + 220) + "px";
-		// paragraphs.style.marginTop = "95px";
-	}
-	
-	adjustPollContent();
-	
-}
-
 function adjustContent(fromLoad) {
-	var paragraphContainer = document.getElementById('paragraphContainer');
-	var paragraphTitle = document.getElementById('paragraphTitle');
-	var paragraph = document.getElementById('paragraph');
 	var column3 = document.getElementsByClassName('column-3');
 	if (document.body.offsetWidth < 800 || isMobileDevice()) {
 		if(column3 && column3.length > 0){
@@ -93,16 +58,7 @@ function adjustContent(fromLoad) {
 				col.style.width = '100%';
 			};
 		}
-		if (fromLoad) {
-			// paragraphContainer.style.height = (paragraphTitle.clientHeight + paragraph.clientHeight + 215) + "px";
-		} else {
-			// paragraphContainer.style.height = (paragraphTitle.clientHeight + paragraph.clientHeight + 135) + "px";
-		}
-		// paragraph.style.marginTop = "120px";
 	} else {
-		// paragraphContainer.style.height = (paragraphTitle.clientHeight + paragraph.clientHeight + 95) + "px";
-	
-		// paragraph.style.marginTop = "95px";
 		if(column3 && column3.length > 0){
 			for (var i = 0; i < column3.length; i++) {
 				var col = column3[i]
@@ -110,21 +66,9 @@ function adjustContent(fromLoad) {
 			};
 		}
 	}
-	adjustPollContent();
 }
 
-function adjustPollContent () {
-	var pollContainer = document.getElementById('pollContainer');
-	var pollText = document.getElementById('pollText');
-	var pollTitle = document.getElementById('pollTitle');
-	var pollParagraph = document.getElementById('pollParagraph');
-	var pollLinksImage = document.getElementById('pollLinksImage');
-	var pollLinks = document.getElementById('pollLinks');
-	var pollImage = document.getElementById('pollImage');
-	// pollText.style.height = (pollTitle.clientHeight + pollParagraph.clientHeight + 55) + "px";
-	// pollLinksImage.style.height = (pollLinks.clientHeight + pollImage.clientHeight + 10) + "px";
-	// pollContainer.style.height = (pollText.clientHeight +  pollLinksImage.clientHeight) + "px";
-}
+
 function renderTable(){
 	var tableContainer = document.getElementById('table-container');
 	tableContainer.innerHTML = '';
@@ -256,4 +200,29 @@ function filterByType(toolType){
 	var tableContainer = document.getElementById('table-container');
 	tableContainer.currentPage = toolType === 'sh' ? 4 : 1;
 	renderTable();
+}
+
+function goToContactenos () {
+	window.location.href = "contactenos.html#contactenos";
+}
+
+function goToSobreNosotros() {
+	window.location.href = "contactenos.html#information";
+}
+
+function goToInicioReadMore() {
+	var inicioReadMore = document.getElementById('inicio-readmore');
+	inicioReadMore.style.display = 'block';
+	window.location.href = "#inicio-readmore";
+}
+
+
+function hideReadMore () {
+	var inicioReadMore = document.getElementById('inicio-readmore');
+	inicioReadMore.style.display = 'none';
+	window.location.href = "#information";
+}
+
+function goUp() {
+	window.location.href = "#header-board";
 }

@@ -7,7 +7,6 @@
 		<title>METRHON: Metrológica de Honduras - Metrología, Laboratorios, Capacitación, Calibración, Equipo</title>
 		<link rel="stylesheet" type="text/css" href="css/headerboard.css">
 		<link rel="stylesheet" type="text/css" href="css/util.css">
-		<link rel="stylesheet" type="text/css" href="css/inicio.css">
 		<script src="js/jssor.slider-25.0.7.min.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/headerboard.js"></script>
 		<script type="text/javascript" src="js/util.js"></script>
@@ -28,10 +27,10 @@
 				<div id="horizontal-menu" class="horizontal-menu">
 					<ul>
 						<li><a href="inicio.html">Inicio</a></li>
-						<li><a href="capacitaciones.html">Capacitaciones</a></li>
-						<li><a href="equipos.html">Equipos</a></li>
-						<li><a href="asesorias.html">Asesorías</a></li>
-						<li><a href="contactenos.html">Contáctenos</a></li>
+						<li><a href="capacitaciones.html#information">Capacitaciones</a></li>
+						<li><a href="equipos.html#information">Equipos</a></li>
+						<li><a href="asesorias.html#information">Asesorías</a></li>
+						<li><a href="contactenos.html#information">Sobre Nosotros</a></li>
 					</ul>
 				</div>
 				<div id="vertical-menu" class="vertical-menu" style="display: none">
@@ -52,21 +51,20 @@
 							<td><a href="inicio.html">Inicio</a></td>
 						</tr>
 						<tr class="border_bottom">
-							<td><a href="capacitaciones.html">Capacitaciones</a></td>
+							<td><a href="capacitaciones.html#information">Capacitaciones</a></td>
 						</tr>
 						<tr class="border_bottom">
-							<td><a href="equipos.html">Equipos</a></td>
+							<td><a href="equipos.html#information">Equipos</a></td>
 						</tr class="border_bottom">
 						<tr class="border_bottom">
-							<td><a href="asesorias.html">Asesorías</a></td>
+							<td><a href="asesorias.html#information">Asesorías</a></td>
 						</tr class="border_bottom">
 						<tr class="border_bottom">
-							<td><a href="contactenos.html">Contáctenos</a></td>
+							<td><a href="contactenos.html#information">Sobre Nosotros</a></td>
 						</tr>
 				</table>
 			</div>
 			<div id="content" class="content">
-				<!-- <img id="equipo" src="images/equipo01.png" /> -->
 				<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
         			<!-- Loading Screen -->
 			        <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
@@ -77,7 +75,7 @@
 			                <img data-u="image" src="images/equipo01.png" />
 			            </div>
 			            <div>
-			                <img data-u="image" src="images/equipo01.png" />
+			               <img data-u="image" src="images/metrologicaSenai2013.png" />
 			            </div>
 			            <a data-u="any" href="https://www.jssor.com" style="display:none">html carousel</a>
 			        </div>
@@ -101,7 +99,7 @@
 			            </svg>
 			        </div>
 			    </div>
-			    <div class="information">
+			   <div class='information' id="information">
 			    	<div id="paragraphContainer" >
 						<p id="paragraph">Estamos para ofrecerle seguridad y confianza en la trazabilidad de las medidas cuando realizamos  la  correcta calibración,  evitando que el resultado de los  ensayos y las medidas bajen la calidad de los equipos en su empresa.</p>
 						<div class='centered'>
@@ -110,7 +108,7 @@
 			    		<div class="column-content">
 							<div class='column-3'>
 								<h2 id="paragraphTitle">Equipamiento</h2>
-
+								<hr/>
 								<ul>
 									<li>Proyectos de equipamiento bajo el concepto "llave en mano" - listo para ser puesto en marcha!.</li>
 									<li>Elaboración de instructivos, procedimientos técnicos, cuidados generales y condiciones especiales de operación a la medida.</li>
@@ -119,6 +117,7 @@
 							</div>
 							<div class='column-3'>
 								<h2 id="paragraphTitle">Sistemas de Calidad</h2>
+								<hr/>
 								<ul>
 									<li>Desarrollo de sistemas de la calidad para sus procesos.</li>
 									<li>Gestión mediante uso de base de datos electrónica.</li>
@@ -127,6 +126,7 @@
 							</div>
 							<div class='column-3'>
 								<h2 id="paragraphTitle">¿Por qué calibrar los equipos?</h2>
+								<hr/>
 								<ul>
 									<li>Le ahorrará  tiempo y costos en sus procesos.</li>
 									<li>Dará confianza a sus clientes en la calidad de los productos y servicios.</li>
@@ -135,10 +135,11 @@
 							</div>
 			    		</div>
 					</div>
+					<button class="go-up-button" type="button" onclick="goUp()" ><i class="arrow up"></i></button>
 			    </div>
 			</div>
 			<footer class="footer">
-				<div class="column-3"></div>
+				<div class="column-3"><img id="logoFooter" src="images/logo1.png"/></div>
 				<div class="column-3">E-mail: consultas@metrhon.com</div>
 				<div class="column-3">©2017 Metrológica de Honduras, S. de R.L.</div>
 			</footer>

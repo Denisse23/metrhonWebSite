@@ -26,14 +26,8 @@ function checkBodySize(size) {
 		content.style.display = 'block';
 		companyText.style.display = 'block';
 		headerboard.style.display = 'block';
-		// content.style.marginTop = getContentMarginTop();
 	}
 	
-}
-
-function getContentMarginTop () {
-	var marginTop = (window.innerHeight * 0.37);
-	return marginTop + 'px';
 }
 
 function showMenu() {

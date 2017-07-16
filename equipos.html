@@ -28,10 +28,10 @@
 				<div id="horizontal-menu" class="horizontal-menu">
 					<ul>
 						<li><a href="inicio.html">Inicio</a></li>
-						<li><a href="capacitaciones.html">Capacitaciones</a></li>
-						<li><a href="equipos.html">Equipos</a></li>
-						<li><a href="asesorias.html">Asesorías</a></li>
-						<li><a href="contactenos.html">Contáctenos</a></li>
+						<li><a href="capacitaciones.html#information">Capacitaciones</a></li>
+						<li><a href="equipos.html#information">Equipos</a></li>
+						<li><a href="asesorias.html#information">Asesorías</a></li>
+						<li><a href="contactenos.html#information">Sobre Nosotros</a></li>
 					</ul>
 				</div>
 				<div id="vertical-menu" class="vertical-menu" style="display: none">
@@ -52,16 +52,16 @@
 							<td><a href="inicio.html">Inicio</a></td>
 						</tr>
 						<tr class="border_bottom">
-							<td><a href="capacitaciones.html">Capacitaciones</a></td>
+							<td><a href="capacitaciones.html#information">Capacitaciones</a></td>
 						</tr>
 						<tr class="border_bottom">
-							<td><a href="equipos.html">Equipos</a></td>
+							<td><a href="equipos.html#information">Equipos</a></td>
 						</tr class="border_bottom">
 						<tr class="border_bottom">
-							<td><a href="asesorias.html">Asesorías</a></td>
+							<td><a href="asesorias.html#information">Asesorías</a></td>
 						</tr class="border_bottom">
 						<tr class="border_bottom">
-							<td><a href="contactenos.html">Contáctenos</a></td>
+							<td><a href="contactenos.html#information">Sobre Nosotros</a></td>
 						</tr>
 				</table>
 			</div>
@@ -77,7 +77,7 @@
 			                <img data-u="image" src="images/equipo01.png" />
 			            </div>
 			            <div>
-			                <img data-u="image" src="images/equipo01.png" />
+			                <img data-u="image" src="images/metrologicaSenai2013.png" />
 			            </div>
 			            <a data-u="any" href="https://www.jssor.com" style="display:none">html carousel</a>
 			        </div>
@@ -101,7 +101,7 @@
 			            </svg>
 			        </div>
 			    </div>
-			    <div class="information">
+			    <div class='information' id="information">
 			    	<h2 id="paragraphTitle">Catálogos y Solicitudes</h2>
 			    	<hr/>
 			   		<p id="paragraph">¿Comienzas a equipar tu laboratorio o buscas lo último en ensayos y calidad? A continuación te mostramos algunos de los equipos que nuestros reconocidos proveedores ofrecen:</p>
@@ -110,11 +110,12 @@
 			   		<div id="table-container"></div>
 			   		<div id="paginator"></div>
 			   		<p class="low-paragraph centered">¿Lo que buscas no aparece o deseas hacer ya tu cotización? Pregunta por otros equipos y haz tus solicitudes escribiendo a nuestro correo: consultas@metrhon.com</p>
-			   		<p class="low-paragraph centered"><strong>¡CONTÁCTENOS!</strong></p>
+			   		<p class="low-paragraph centered" style="cursor:pointer;" onclick="goToContactenos()"><strong>¡CONTÁCTENOS!</strong></p>
+					<button class="go-up-button" type="button" onclick="goUp()" ><i class="arrow up"></i></button>
 			    </div>
 			</div>
 			<footer class="footer">
-				<div class="column-3"></div>
+				<div class="column-3"><img id="logoFooter" src="images/logo1.png"/></div>
 				<div class="column-3">E-mail: consultas@metrhon.com</div>
 				<div class="column-3">©2017 Metrológica de Honduras, S. de R.L.</div>
 			</footer>
