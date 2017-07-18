@@ -158,14 +158,19 @@ function renderTable(){
 	var pageSize = 4;
 	var pages = Math.ceil(elements.length/pageSize);
 	var currentPage = tableContainer.currentPage || 1;
-	var table = document.createElement('table');
+	var table = document.createElement('div');
+	table.classList = "table";
 	for (var i = ((currentPage * pageSize) - pageSize); i < (currentPage * pageSize); i++) {
-		var row = document.createElement('tr');
+		var productDiv = document.createElement('div');
+		productDiv.classList = "product-container";
 		var tool = elements[i];
-		var imageCell = document.createElement('td');
+		var imageCell = document.createElement('div');
+		imageCell.classList = "image-container";
 		var image = document.createElement('img');
+		image.classList = "product-image";
 		image.src = tool.image;
-		var descriptionCell = document.createElement('td');
+		var descriptionCell = document.createElement('div');
+		descriptionCell.classList = "description-container";
 		var description = document.createElement('span');
 		description.innerHTML = tool.description;
 		var type = document.createElement('img');
@@ -174,9 +179,9 @@ function renderTable(){
 		imageCell.appendChild(image);
 		descriptionCell.appendChild(description);
 		descriptionCell.appendChild(type);
-		row.appendChild(imageCell);
-		row.appendChild(descriptionCell);
-		table.appendChild(row);
+		productDiv.appendChild(imageCell);
+		productDiv.appendChild(descriptionCell);
+		table.appendChild(productDiv);
 	};
 	tableContainer.appendChild(table);
 	var tablePaginator = document.getElementById('paginator');
@@ -194,6 +199,14 @@ function renderTable(){
 		}
 		pageNumber.onclick = function(evt){onPageChange(evt.target.innerHTML);};
 		tablePaginator.appendChild(pageNumber);
+	}
+	if(isMobileDevice()){
+		var productContainer = document.getElementsByClassName('product-container');
+		if(productContainer && productContainer.length > 0){
+			for (var i = 0; i < productContainer.length; i++) {
+				productContainer[i].style.width = '100%';
+			};
+		}
 	}
 }
 function filterByType(toolType){

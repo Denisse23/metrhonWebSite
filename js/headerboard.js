@@ -17,7 +17,12 @@ function checkBodySize(size) {
 			headerboard.style.display = 'block';
 			companyHeader.style.paddingLeft = '0px';
 		}
-		
+		var productContainer = document.getElementsByClassName('product-container');
+		if(productContainer && productContainer.length > 0){
+			for (var i = 0; i < productContainer.length; i++) {
+				productContainer[i].style.width = '100%';
+			};
+		}
 	} else {
 		headerboard.style.display = 'block';
 		verticalMenu.style.display = 'none';
@@ -26,6 +31,12 @@ function checkBodySize(size) {
 		content.style.display = 'block';
 		companyText.style.display = 'block';
 		headerboard.style.display = 'block';
+		var productContainer = document.getElementsByClassName('product-container');
+		if(productContainer && productContainer.length > 0){
+			for (var i = 0; i < productContainer.length; i++) {
+				productContainer[i].style.width = '47%';
+			};
+		}
 	}
 	
 }
