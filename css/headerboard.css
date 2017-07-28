@@ -9,6 +9,7 @@ body {
 	overflow-x:hidden;
 	background: url(../images/bg.jpg) top center;
     background-size: cover;
+	overflow-y:hidden;
 }
 .main-wrapper{
 	top:30px;
@@ -60,7 +61,7 @@ body {
     text-decoration: none;
     font-size: 15px;
     color: #FFFFFF;
-    font-family: Myriad Pro;
+    font-family: Helvetica;
     padding: 12px 24px 13px 26px;
 }
 .header  .horizontal-menu ul li a:hover{
@@ -76,23 +77,24 @@ body {
 #logo {
 	width:280px;
 	height:100%;
+	cursor:pointer;
 }
 
 h1 {
-	font-family: Myriad Pro;
+	font-family: Helvetica;
 	color:#2c353d;
 }
 
 h5 {
 	font-style: italic;
 	text-align: center;
-	font-family: Myriad Pro;
+	font-family: Helvetica;
 }
 
 h3 {
 	margin: auto;
 	background-color:#50617f;
-	font-family: Myriad Pro;
+	font-family: Helvetica;
 	color:#2c353d;
 	text-align:center;
 	padding:2px;
@@ -131,7 +133,7 @@ h3 {
     padding: 5%;
 	text-decoration:none; 
 	color:#2c353d;
-	font-family: Myriad Pro;
+	font-family: Helvetica;
 }
 
 .headerTableRow {
@@ -143,7 +145,7 @@ h3 {
 	color:#2c353d;
 	font-weight: bold;
 	font-size:160%;
-	font-family: Myriad Pro;
+	font-family: Helvetica;
 }
 
 
@@ -180,9 +182,7 @@ tr.border_bottom td {
 
  
  #content {
-	height:100%;
-	overflow:auto;
-	overflow-y:hidden;
+	overflow-x:hidden;
  }
  
  #logoFooter {
@@ -194,11 +194,22 @@ tr.border_bottom td {
  }
 
 footer{
+	padding-top:10px;
+	max-width:100%;
+	overflow-x:hidden;
 	background: #2c353d;
     color: #ababab;
-    font-size: 12px;
-    font-family: Myriad Pro;
+    font-size: 15px;
+	font-weight:bold;
+    font-family: Helvetica;
     background-image:url(../images/footer.png);
+}
+
+#facebookLogo {
+	height:40px;
+	width:40px;
+	cursor:pointer;
+	margin-left:40%;
 }
 
 .column-content{
@@ -211,9 +222,10 @@ footer{
     vertical-align: top;
     text-align: center;
     margin: 15px;  
+	
 }
 .column-3 ul{
-	font-family: Myriad Pro !important;
+	font-family: Helvetica !important;
     margin: 0 !important; 
     color: #1a1a1a !important;
     text-align: justify !important;

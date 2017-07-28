@@ -4,6 +4,10 @@ function onLoad() {
 	jssorSliderInit();
 }
 
+function onLoadSolicitud() {
+	checkBodySize(document.body.offsetWidth);
+}
+
 function onBodyResize() {
 	checkBodySize(document.body.offsetWidth);
 }
@@ -67,6 +71,44 @@ function adjustContent(fromLoad) {
 		}
 	}
 }
+
+function adjustSolicitudContent(fromLoad) {
+	var column21 = document.getElementsByClassName('column-2-1');
+	var column22 = document.getElementsByClassName('column-2-2');
+	if (document.body.offsetWidth < 800 || isMobileDevice()) {
+		if(column21 && column21.length > 0){
+			for (var i = 0; i < column21.length; i++) {
+				var col = column21[i];
+				col.style.width = '100%';
+				col.style.textAlign = 'left'
+			};
+		}
+		if(column22 && column22.length > 0){
+			for (var i = 0; i < column22.length; i++) {
+				var col = column22[i];
+				col.style.width = '100%';
+				col.style.textAlign = 'left'
+			};
+		}
+	} else {
+		if(column21 && column21.length > 0){
+			for (var i = 0; i < column21.length; i++) {
+				var col = column21[i]
+				col.style.width = '70%';
+				col.style.textAlign = 'left'
+			};
+		}
+		if(column22 && column22.length > 0){
+			for (var i = 0; i < column22.length; i++) {
+				var col = column22[i];
+				col.style.width = '29%';
+				col.style.textAlign = 'left'
+			};
+		}
+	}
+}
+
+
 
 
 function renderTable(){
@@ -200,7 +242,7 @@ function renderTable(){
 		pageNumber.onclick = function(evt){onPageChange(evt.target.innerHTML);};
 		tablePaginator.appendChild(pageNumber);
 	}
-	if(isMobileDevice()){
+	if(document.body.offsetWidth < 800 || isMobileDevice()){
 		var productContainer = document.getElementsByClassName('product-container');
 		if(productContainer && productContainer.length > 0){
 			for (var i = 0; i < productContainer.length; i++) {
