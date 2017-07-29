@@ -187,7 +187,7 @@ tr.border_bottom td {
  
  #logoFooter {
 	margin-top:5px;
-	height:120px; 
+	height:60px; 
 	border: 2px solid;
     border-radius: 5px 25px 5px;
 	margin-bottom:10px;
@@ -199,17 +199,19 @@ footer{
 	overflow-x:hidden;
 	background: #2c353d;
     color: #ababab;
-    font-size: 15px;
+    font-size: 12px;
 	font-weight:bold;
     font-family: Helvetica;
-    background-image:url(../images/footer.png);
+    background-image:url(../images/footer2.png);
+}
+footer .column-3{
+	width: 30% !important;
+    margin: 1%;
 }
 
 #facebookLogo {
-	height:40px;
-	width:40px;
+	height:25px;
 	cursor:pointer;
-	margin-left:40%;
 }
 
 .column-content{

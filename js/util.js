@@ -32,7 +32,7 @@ function jssorSliderInit() {
     function ScaleSlider() {
         var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
         if (refSize) {
-            refSize = Math.min(refSize, 1160);
+            refSize = Math.min(refSize, 1060);
             jssor_1_slider.$ScaleWidth(refSize);
         }
         else {
@@ -62,11 +62,25 @@ function adjustContent(fromLoad) {
 				col.style.width = '100%';
 			};
 		}
+		var footer = document.getElementsByTagName('footer');
+		if(footer && footer.length > 0){
+			for (var i = 0; i < footer.length; i++) {
+				var f = footer[i];
+				f.style.fontSize = '10px';
+			};
+		}
 	} else {
 		if(column3 && column3.length > 0){
 			for (var i = 0; i < column3.length; i++) {
 				var col = column3[i]
 				col.style.width = '30%';
+			};
+		}
+		var footer = document.getElementsByTagName('footer');
+		if(footer && footer.length > 0){
+			for (var i = 0; i < footer.length; i++) {
+				var f = footer[i];
+				f.style.fontSize = '12px';
 			};
 		}
 	}

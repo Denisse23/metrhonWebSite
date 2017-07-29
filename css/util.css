@@ -345,7 +345,8 @@ form input[type=reset] {
 }
 
 .arrow_bullet_list {
-    list-style-image: url(../images/arrow_icon2.png);
+    /*list-style-image: url(../images/arrow_icon2.png);*/
+    list-style-type:bullet;
 	font-size:20px;
 }
 
@@ -376,3 +377,6 @@ form input[type=reset] {
 }
 
 
+.image-slider-wrapper{
+	margin: 0 1%;
+}
