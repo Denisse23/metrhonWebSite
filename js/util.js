@@ -295,3 +295,15 @@ function hideReadMore () {
 function goUp() {
 	window.location.href = "#header-board";
 }
+
+function adjustImage() {
+	var fondo07 = document.getElementById('fondo07');
+	if (document.body.offsetWidth < 800 || isMobileDevice()) {
+		fondo07.style.width = '110%';
+		fondo07.style.marginLeft = '-30px';
+	} else {
+		fondo07.style.width = '50%';
+		fondo07.style.marginLeft = '25%';
+	}
+	
+}

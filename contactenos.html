@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="js/util.js"></script>
 
 	</head>	
-	<body onLoad="onLoad(); adjustContent(true);" onresize="onBodyResize(); adjustContent(false); ">
+	<body onLoad="onLoad(); adjustContent(true); adjustImage();" onresize="onBodyResize(); adjustContent(false); adjustImage();">
 		<div class="main-wrapper">
 			<div class="header" id="header-board">
 				<div class="company-info" id="company-header">
@@ -148,8 +148,8 @@
 						<p class="centered" id='email'><strong>consultas@metrhon.com</strong></p>
 						<p class="centered">Nos  interesa conocer cualquier duda o comentario que tenga sobre los servicios que ofrecemos.</p>
 					</div>
-					<div class='centered'>
-						<img src="images/fondo07.png" width="440" height="240" longdesc="images/equipo01.png">
+					<div style="width:100%;">
+						<img id="fondo07" src="images/fondo07.png" height="240" style="width:50%; margin-left:25%;" longdesc="images/equipo01.png">
 					</div>
 					</div>
 					<br>
